@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ONG</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="nome">Name</string>
+    <string name="email">Email</string>
+    <string name="telefone">Phone Number</string>
+    <string name="celular">Cell Number</string>
+    <string name="empresa">Company</string>
+    <string name="site">Site</string>
+    <string name="mensagem">Message</string>
+</resources>
