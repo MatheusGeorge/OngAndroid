@@ -45,7 +45,7 @@ public class Email extends Fragment {
             i.putExtra(Intent.EXTRA_SUBJECT, "Padrinho");
             if(nome.getText().length() == 0 || email.getText().length() == 0 || tel.getText().length() == 0 || cel.getText().length() == 0 || empresa.getText().length() == 0
                     || site.getText().length() == 0 || mensagem.getText().length() == 0){
-                Toast.makeText(getContext(), "Necessário preencher todos os campos", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), getString(R.string.aviso_email), Toast.LENGTH_SHORT).show();
             }
             else{
                 i.putExtra(Intent.EXTRA_TEXT   ,"info: \n" + getString(R.string.mensagem) + ": " + mensagem.getText().toString() + "\n"
@@ -56,9 +56,9 @@ public class Email extends Fragment {
                         + getString(R.string.empresa) + ": " + empresa.getText().toString() + "\n"
                         + getString(R.string.site) + ": " + site.getText().toString() + "\n");
                 try {
-                    startActivity(Intent.createChooser(i, "Send mail..."));
+                    startActivity(Intent.createChooser(i, getString(R.string.enviar_email)));
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(getContext(), "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getString(R.string.erro_email), Toast.LENGTH_SHORT).show();
                 }
             }
         }

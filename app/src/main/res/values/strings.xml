@@ -9,4 +9,15 @@
     <string name="empresa">Company</string>
     <string name="site">Site</string>
     <string name="mensagem">Message</string>
+    <string name="aviso_email">Necessary to write in all fields</string>
+    <string name="enviar_email">Send mail...</string>
+    <string name="erro_email">There are no email clients installed.</string>
+    <string name="eventos_disponiveis">Events Available</string>
+    <string name="titulo_item">Currently in need of following items:</string>
+    <string name="geladeira">Refrigerator</string>
+    <string name="microondas">Microwave</string>
+    <string name="televisao">TV</string>
+    <string name="video">Click here to start video</string>
+    <string name="nota_fiscal">Make your donation as a tax benefit! Federal Public Utility Certificate Ordinance No. 2021 of 05/17/2013 Donate your credits from the Nota Fiscal Paulista Just indicate our CNPJ in your purchases or send your coupons to one of our Units.CNPJ / MF n.08.346.099 / 0001-90</string>
+    <string name="pag_seguro">Donate by PagSeguro</string>
 </resources>
