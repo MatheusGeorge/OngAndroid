@@ -19,13 +19,19 @@ public class Dinheiro extends Fragment {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setSupportZoom(false);
-        String  html = "<meta charset=\"utf-8\" />";
-                html +="<form action=\"https://pagseguro.uol.com.br/checkout/v2/donation.html\" method=\"post\">";
-                html += "<input type=\"hidden\" name=\"currency\" value=\"BRL\" />";
-                html +="<input type=\"hidden\" name=\"receiverEmail\" value=\"matheus.vs2015@hotmail.com\" />";
-                html += "<input type=\"hidden\" name=\"iot\" value=\"button\" />";
-                html +="<input type=\"image\" src=\"https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar-preto.gif\" name=\"submit\" alt=\"Pague com PagSeguro - é rápido, grátis e seguro!\" />";
-                html +="</form>";
+        String  html = "<!DOCTYPE html>";
+                    html += "<head><meta charset='utf-8'/></head>";
+                    html += "<div class='container'>";
+                            html += "<div class='row'>";
+                                    html += "<form style='text-align: center;' action='https://pagseguro.uol.com.br/checkout/v2/donation.html?currency=BRL&receiverEmail=matheus.vs2015@hotmail.com' method='post'>";
+                                    html += "<input type='hidden' name='currency' value='BRL'/>";
+                                    html += "<input type='hidden' name='receiverEmail' value='matheus.vs2015@hotmail.com'/>";
+                                    html += "<input type='hidden' name='iot' value='button'/>";
+                                    html += "<input type='image' src='https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar-preto.gif' name='submit' alt='Pague com PagSeguro - é rápido, grátis e seguro!'/>";
+                                    html += "</form>";
+                            html += "</div>";
+                        html += "</div>";
+                    html += "</html>";
         mWebView.loadData(html, "text/html", null);
         return rootView;
     }

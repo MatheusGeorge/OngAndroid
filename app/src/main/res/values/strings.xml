@@ -20,4 +20,9 @@
     <string name="video">Click here to start video</string>
     <string name="nota_fiscal">Make your donation as a tax benefit! Federal Public Utility Certificate Ordinance No. 2021 of 05/17/2013 Donate your credits from the Nota Fiscal Paulista Just indicate our CNPJ in your purchases or send your coupons to one of our Units.CNPJ / MF n.08.346.099 / 0001-90</string>
     <string name="pag_seguro">Donate by PagSeguro</string>
+    <string name="herdeiro">Godfather an heir</string>
+    <string name="doar">Donate money</string>
+    <string name="doar_item">Donate item</string>
+    <string name="eventos">Events</string>
+    <string name="enviar">Send</string>
 </resources>
