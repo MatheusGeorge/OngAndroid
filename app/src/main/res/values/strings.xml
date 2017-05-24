@@ -25,4 +25,6 @@
     <string name="doar_item">Donate item</string>
     <string name="eventos">Events</string>
     <string name="enviar">Send</string>
+    <string name="email_invalido">Invalid email</string>
+    <string name="site_invalido">Invlid Site</string>
 </resources>

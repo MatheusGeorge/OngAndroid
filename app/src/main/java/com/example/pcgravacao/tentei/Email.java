@@ -3,6 +3,7 @@ package com.example.pcgravacao.tentei;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,14 +48,20 @@ public class Email extends Fragment {
                     || site.getText().length() == 0 || mensagem.getText().length() == 0){
                 Toast.makeText(getContext(), getString(R.string.aviso_email), Toast.LENGTH_SHORT).show();
             }
+            else if(!isValidEmail(email.getText().toString())){
+                Toast.makeText(getContext(), getString(R.string.email_invalido), Toast.LENGTH_SHORT).show();
+            }
+            else if(!isValidSite(site.getText().toString())){
+                Toast.makeText(getContext(), getString(R.string.site_invalido), Toast.LENGTH_SHORT).show();
+            }
             else{
-                i.putExtra(Intent.EXTRA_TEXT   ,"info: \n" + getString(R.string.mensagem) + ": " + mensagem.getText().toString() + "\n"
-                        + getString(R.string.nome) + ": " + nome.getText().toString() + "\n"
+                i.putExtra(Intent.EXTRA_TEXT   ,"info: \n" + getString(R.string.nome) + ": " + nome.getText().toString() + "\n"
                         + getString(R.string.email) + ": " + email.getText().toString() + "\n"
                         + getString(R.string.telefone) + ": " + tel.getText().toString() + "\n"
                         + getString(R.string.celular) + ": " + cel.getText().toString() + "\n"
                         + getString(R.string.empresa) + ": " + empresa.getText().toString() + "\n"
-                        + getString(R.string.site) + ": " + site.getText().toString() + "\n");
+                        + getString(R.string.site) + ": " + site.getText().toString() + "\n"
+                        + getString(R.string.mensagem) + ": " + mensagem.getText().toString() + "\n");
                 try {
                     startActivity(Intent.createChooser(i, getString(R.string.enviar_email)));
                 } catch (android.content.ActivityNotFoundException ex) {
@@ -63,4 +70,20 @@ public class Email extends Fragment {
             }
         }
     };
+
+    public final static boolean isValidEmail(CharSequence target) {
+        if (target == null) {
+            return false;
+        } else {
+            return android.util.Patterns.EMAIL_ADDRESS.matcher(target).matches();
+        }
+    }
+
+    public final static boolean isValidSite(CharSequence target) {
+        if (target == null) {
+            return false;
+        } else {
+            return Patterns.WEB_URL.matcher(target).matches();
+        }
+    }
 }
