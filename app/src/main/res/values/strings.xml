@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">ONG</string>
+    <string name="app_name" translatable="false">ONG</string>
     <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
     <string name="nome">Name</string>
     <string name="email">Email</string>
     <string name="telefone">Phone Number</string>
@@ -18,7 +18,7 @@
     <string name="microondas">Microwave</string>
     <string name="televisao">TV</string>
     <string name="video">Click here to start video</string>
-    <string name="nota_fiscal">Make your donation as a tax benefit! Federal Public Utility Certificate Ordinance No. 2021 of 05/17/2013 Donate your credits from the Nota Fiscal Paulista Just indicate our CNPJ in your purchases or send your coupons to one of our Units.CNPJ / MF n.08.346.099 / 0001-90</string>
+    <string name="nota_fiscal">Make your donation as a tax benefit! Federal Public Utility Certificate Ordinance N° 2021 of 05/17/2013 Donate your credits from the Nota Fiscal Paulista. Just indicate our CNPJ in your purchases or send your coupons to one of our Units.CNPJ / MF n.08.346.099 / 0001-90</string>
     <string name="pag_seguro">Donate by PagSeguro</string>
     <string name="herdeiro">Godfather an heir</string>
     <string name="doar">Donate money</string>

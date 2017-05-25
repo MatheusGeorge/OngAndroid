@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ONG</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="aviso_email">Necesario rellenar todos los campos</string>
+    <string name="celular">Celular</string>
+    <string name="doar">Donación de dinero</string>
+    <string name="doar_item">Donar elemento</string>
+    <string name="email">Correo electrónico</string>
+    <string name="email_invalido">Correo electrónico no válido</string>
+    <string name="empresa">Empresa</string>
+    <string name="enviar">Enviar</string>
+    <string name="enviar_email">Enviar correo electrónico</string>
+    <string name="erro_email">No hay aplicación que envió correo electrónico instalado</string>
+    <string name="eventos">Eventos</string>
+    <string name="eventos_disponiveis">Eventos disponibles</string>
+    <string name="geladeira">Refrigerador</string>
+    <string name="herdeiro">Apadrinar a un heredero</string>
+    <string name="mensagem">Mensaje</string>
+    <string name="microondas">Microondas</string>
+    <string name="nome">Nombre</string>
+    <string name="nota_fiscal">"Haga su donación como beneficio fiscal Certificado de Utilidad Pública Federal Portaria N ° 2021 de 17/05/2013 Doe sus créditos de la Nota Fiscal Paulista. Basta indicar nuestro CNPJ en sus compras o enviar cupones a una de nuestras Unidades CNPJ / MF n. .08.346.099 / 0001-90 "</string>
+    <string name="pag_seguro">Donar por PagSeguro</string>
+    <string name="site">Sitio web</string>
+    <string name="site_invalido">Sitio no válido</string>
+    <string name="telefone">Teléfono</string>
+    <string name="televisao">Televisión</string>
+    <string name="titulo_item">Actualmente la ONG necesita los siguientes elementos:</string>
+    <string name="video">Haga clic para iniciar el vídeo</string>
+</resources>
