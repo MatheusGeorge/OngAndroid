@@ -24,17 +24,22 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="?attr/colorPrimary"
+                android:background="@android:color/background_light"
                 android:minHeight="150dp"
                 app:layout_scrollFlags="scroll|enterAlways"
-                app:popupTheme="@style/AppTheme.PopupOverlay">
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:subtitleTextColor="@android:color/background_light"
+                app:titleTextColor="@android:color/background_light">
 
             </android.support.v7.widget.Toolbar>
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@android:color/background_light"
+                app:tabSelectedTextColor="@android:color/background_light"
+                app:tabTextColor="@android:color/background_light" />
 
         </android.support.design.widget.AppBarLayout>
 

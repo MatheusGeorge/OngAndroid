@@ -18,23 +18,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/nome"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <EditText
             android:id="@+id/nomeEditText"
-            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <TextView
             android:id="@+id/emailTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/email"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <EditText
             android:id="@+id/emailEditText"
@@ -42,14 +42,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <TextView
             android:id="@+id/telefoneTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/telefone"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <EditText
             android:id="@+id/telefoneEditText"
@@ -57,14 +57,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <TextView
             android:id="@+id/celularTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/celular"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <EditText
             android:id="@+id/celularEditText"
@@ -72,39 +72,39 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="numberDecimal"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimary" />
 
         <TextView
             android:id="@+id/empresaTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/empresa"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimary" />
 
         <EditText
             android:id="@+id/empresaEditText"
-            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/siteTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/site"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimary" />
 
         <EditText
             android:id="@+id/siteEditText"
-            android:digits=". abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:digits=". abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:ems="10"
             android:inputType="textPersonName"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/mensagemTextView"
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:elevation="0dp"
             android:hint="@string/mensagem"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorAccent" />
 
         <EditText
             android:id="@+id/mensagemEditText"
@@ -125,7 +125,7 @@
             android:inputType="textMultiLine"
             android:keepScreenOn="true"
             android:maxLines="5"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimaryDark" />
 
         <ImageButton
             android:id="@+id/ongImageButton"
@@ -152,6 +152,6 @@
             android:layout_columnSpan="2"
             android:layout_gravity="center"
             android:hint="@string/enviar"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@color/colorPrimary" />
     </GridLayout>
 </ScrollView>
