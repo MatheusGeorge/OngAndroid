@@ -64,5 +64,13 @@
         android:text="08/07/2017 - Noite do Cinema"
         android:textColor="@android:color/black" />
 
+    <EditText
+        android:id="@+id/testeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
 </LinearLayout>
 </ScrollView>
