@@ -3,11 +3,10 @@ package com.example.pcgravacao.tentei;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -25,7 +24,8 @@ import java.util.List;
 public class Evento extends Fragment {
 
     private List<EventoLista> eventos = new ArrayList<>();
-    private EditText teste;
+    private EventoArrayAdapter eventoArrayAdapter;
+    private ListView eventoListView;
 
     public Evento() {}
 
@@ -43,7 +43,9 @@ public class Evento extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.evento, container, false);
-        teste = (EditText) rootView.findViewById(R.id.testeEditText);
+        eventoListView = (ListView) rootView.findViewById(R.id.eventoListView);
+        eventoArrayAdapter = new EventoArrayAdapter(getContext(), eventos);
+        eventoListView.setAdapter(eventoArrayAdapter);
         URL url = null;
         try{
             url = new URL("http://hdf-api.herokuapp.com/api/eventos");
@@ -75,7 +77,6 @@ public class Evento extends Fragment {
                         while ((line = reader.readLine()) != null) {
                             builder.append(line);
                         }
-                        Toast.makeText(getContext(), "foi", Toast.LENGTH_LONG).show();
                     } catch (IOException e) {
                         Toast.makeText(getContext(), "Errors while trying to get the donates.", Toast.LENGTH_LONG).show();
                         e.printStackTrace();
@@ -95,37 +96,23 @@ public class Evento extends Fragment {
 
         protected void onPostExecute(JSONObject don) {
             convertJSONToArrayList(don);
-            Log.d("Eventos Convertidos", eventos.toString());
-            teste.setText("");
-            teste.setText(formatarEventos(Evento.this.eventos));
+            eventoArrayAdapter.notifyDataSetChanged();
+            eventoListView.smoothScrollToPosition(0);
         }
 
         private void convertJSONToArrayList(JSONObject forecast) {
-            Evento.this.eventos.clear();
+            eventos.clear();
             try {
                 JSONArray list = forecast.getJSONArray("eventos");
                 for (int i = 0; i < list.length(); i++) {
                     JSONObject line = list.getJSONObject(i);
-                    Evento.this.eventos.add(new EventoLista(line.getString("data"), line.getString("titulo")));
+                    eventos.add(new EventoLista(line.getString("titulo"), line.getString("data")));
                 }
-                Log.d("ConvertJSONToArray", Evento.this.eventos.toString());
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-
-        protected String formatarEventos(List<EventoLista> eve) {
-            String ret = "";
-            if ((eve != null) && (eve.size() > 0)) {
-                for (int i = 0; i < eve.size(); i++) {
-                    ret += "Data: " + eve.get(i).getData() + "\n" +
-                            "Título : " + eve.get(i).getTitulo() + "\n" +
-                            "===============================\n";
-                }
-            }
-            return ret;
-        }
     }
 }
 

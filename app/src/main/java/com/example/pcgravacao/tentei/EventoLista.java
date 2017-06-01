@@ -3,8 +3,8 @@ package com.example.pcgravacao.tentei;
 
 public class EventoLista {
 
-    private String data;
-    private String titulo;
+    public String data;
+    public String titulo;
 
     public EventoLista(String data, String titulo) {
         this.data = data;

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,65 +9,17 @@
         android:id="@+id/tituloTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.15"
+        android:layout_weight="0"
         android:hint="@string/eventos_disponiveis"
         android:padding="@dimen/normal"
         android:textColorHint="@color/colorAccent"
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/evento1TextView"
+    <ListView
+        android:id="@+id/eventoListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:padding="@dimen/normal"
-        android:text="12/06/2017 -  Noite da Pizza"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/evento2TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:padding="@dimen/normal"
-        android:text="17/06/2017 - Bingo"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/evento3TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:padding="@dimen/normal"
-        android:text="25/06/2017 - Apresentação Teatro"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/evento4TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:padding="@dimen/normal"
-        android:text="05/07/2017 - Aniversário da ONG"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/evento5TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:padding="@dimen/normal"
-        android:text="08/07/2017 - Noite do Cinema"
-        android:textColor="@android:color/black" />
-
-    <EditText
-        android:id="@+id/testeEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.15"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
-</ScrollView>

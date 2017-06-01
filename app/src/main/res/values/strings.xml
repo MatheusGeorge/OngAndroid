@@ -27,4 +27,6 @@
     <string name="enviar">Send</string>
     <string name="email_invalido">Invalid email</string>
     <string name="site_invalido">Invlid Site</string>
+    <string name="data_evento" translatable="false">%s</string>
+    <string name="titulo_evento" translatable="false">%s</string>
 </resources>
