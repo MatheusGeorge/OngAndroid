@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_columnSpan="1"
-        android:padding="@dimen/normal"
+        android:layout_gravity="top"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_columnSpan="1"
+        android:layout_gravity="top"
         android:gravity="center"
-        android:padding="@dimen/normal"
         android:text="TextView"
         android:textColor="@android:color/black" />
 </GridLayout>

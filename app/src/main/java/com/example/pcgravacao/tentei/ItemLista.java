@@ -8,7 +8,7 @@ public class ItemLista {
 
     public ItemLista(String titulo, String imagem) {
         this.titulo = titulo;
-        this.imagem = imagem;
+        this.imagem = "http://hdf-api.herokuapp.com/" + imagem;
     }
 
     public String getTitulo() {

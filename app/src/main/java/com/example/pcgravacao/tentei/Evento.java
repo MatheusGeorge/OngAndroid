@@ -29,10 +29,6 @@ public class Evento extends Fragment {
 
     public Evento() {}
 
-    public static Evento newInstance(String param1, String param2) {
-        Evento fragment = new Evento();
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
