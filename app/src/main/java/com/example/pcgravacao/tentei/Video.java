@@ -18,7 +18,7 @@ public class Video extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.video, container, false);
         ongVideoView = (VideoView) rootView.findViewById(R.id.ongVideoView);
-        ongVideoView.setVideoURI(Uri.parse("android.resource://" + getActivity().getPackageName() +"/"+R.raw.ongvideo));
+        ongVideoView.setVideoURI(Uri.parse("android.resource://" + getActivity().getPackageName() +"/"+R.raw.herdeiros));
         ongVideoView.setMediaController(new MediaController(getActivity()));
         ongVideoView.setOnClickListener(listenerVideo);
         Toast.makeText(getContext(), getString(R.string.video), Toast.LENGTH_SHORT).show();
